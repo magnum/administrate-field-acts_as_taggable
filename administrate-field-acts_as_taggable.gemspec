@@ -4,7 +4,7 @@ require 'administrate/field/acts_as_taggable/version'
 
 Gem::Specification.new do |gem|
   gem.name = 'administrate-field-acts_as_taggable'
-  gem.version = Administrate::Field::ActsAsTaggable::VERSION
+  gem.version = Administrate::Field::ActsAsTaggableVersion::VERSION
   gem.authors = ['Apsis Labs']
   gem.email = ['wyatt@apsis.io']
   gem.homepage = 'https://github.com/apsislabs/administrate-field-acts_as_taggable'

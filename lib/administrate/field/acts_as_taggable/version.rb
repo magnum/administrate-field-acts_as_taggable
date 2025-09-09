@@ -1,6 +1,6 @@
 module Administrate
   module Field
-    module ActsAsTaggable
+    module ActsAsTaggableVersion
       VERSION = '0.0.4'
     end
   end
