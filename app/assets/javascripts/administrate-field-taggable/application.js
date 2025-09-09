@@ -1,5 +1,6 @@
 // ActsAsTaggableOn Administrate Form
-$(function() {
+document.addEventListener('turbo:load', function() {
+  //console.log("Administrate::Field::ActsAsTaggable");
   $(".field-unit--acts-as-taggable .field-unit__field > input").each(function(elem) {
     var $this = $(this);
     var opts = $this.data('tag-options');
