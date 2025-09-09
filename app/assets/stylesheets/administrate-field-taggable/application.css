@@ -1,0 +1,25 @@
+@import "administrate/library/variables";
+
+.taggable_field {
+    .tag {
+        text-align: center;
+        font-size: 1em;
+        margin: 0 3px 3px 0;
+        padding: 2px 6px;
+        background: #f2f2f2;
+        color: #303030;
+        border: 0 solid #d0d0d0;
+    }
+
+}
+.field-unit--acts-as-taggable {
+    .selectize-dropdown {
+        /* border: 1px solid red; */
+        .selectize-dropdown-content {
+            padding: 5px;
+            .option {
+                cursor: pointer;
+            }
+        }
+    }
+}

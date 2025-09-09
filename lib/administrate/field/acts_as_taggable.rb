@@ -1,10 +1,12 @@
 require 'rails'
 require 'administrate/field/text'
 require 'administrate/engine'
+require_relative 'acts_as_taggable/version'
 
 module Administrate
   module Field
     class ActsAsTaggable < Administrate::Field::Text
+      VERSION = ActsAsTaggableVersion::VERSION
       class Engine < ::Rails::Engine
         if defined?(Administrate::Engine)
           Administrate::Engine.add_javascript 'administrate-field-taggable/application'
