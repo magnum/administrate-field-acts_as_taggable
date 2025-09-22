@@ -46,8 +46,10 @@ module Administrate
 
       def tag_options
         return [] unless defined? ActsAsTaggableOn::Tag
-
-        ActsAsTaggableOn::Tag.for_context(context).order(:name).map do |t|
+        
+        #todo
+        #ActsAsTaggableOn::Tag.for_context(context).order(:name).map do |t|
+        ActsAsTaggableOn::Tag.for_tenant(Current.user.id).for_context(context).order(:name).map do |t|
           { text: t.name, value: t.name }
         end
       end
